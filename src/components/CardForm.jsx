@@ -41,9 +41,9 @@ function CardForm() {
               </span>
             </label>
             <select className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
-              <option value="ss">ss</option>
-              <option value="efef">fedf</option>
-              <option value="seffs">efefes</option>
+              <option value="ss">لوگو تصویری</option>
+              <option value="efef">لوگو تایپ</option>
+              <option value="seffs">لوگو ترکیبی</option>
             </select>
           </div>
 
@@ -56,13 +56,10 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <input
-              className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
-              type="number"
-              name="approved"
-              id="approved"
-              onChange={(e) => setForm(e.target.value)}
-            />
+            <select className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+              <option value="ss">فارسی</option>
+              <option value="ss">انگلیسی</option>
+            </select>
           </div>
 
           <div className="flex flex-col space-y-1">
@@ -74,18 +71,18 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <input
-              className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
-              type="number"
-              name="notpaid"
-              id="notpaid"
-              onChange={(e) => setForm(e.target.value)}
-            />
+            <select className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+              <option value="ss">شیک و کلاسیک</option>
+              <option value="ss">لاکچری و مدرن</option>
+              <option value="efef">خلاقانه و مفهومی</option>
+              <option value="seffs">ساده و مینیمال</option>
+              <option value="ss">به انتخاب طراح</option>
+            </select>
           </div>
 
           <div className="flex flex-col space-y-1">
             <label className="flex items-start gap-x-1" htmlFor="paid">
-              اولویت رنگ برندتان چگونه باشد؟
+              رنگ برندتان چگونه باشد؟
               <span className="text-black">
                 <svg className="h-[10px] w-[10px] dark:text-white text-black ">
                   <use href="#star"></use>
@@ -132,13 +129,11 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <input
+            <textarea
               className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
-              type="text"
-              name="paid"
-              id="paid"
-              onChange={(e) => setForm(e.target.value)}
-            />
+              name=""
+              id=""
+            ></textarea>
           </div>
         </div>
       </div>
