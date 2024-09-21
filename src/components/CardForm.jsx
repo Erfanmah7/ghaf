@@ -40,7 +40,7 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <select className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
               <option value="ss">لوگو تصویری</option>
               <option value="efef">لوگو تایپ</option>
               <option value="seffs">لوگو ترکیبی</option>
@@ -56,7 +56,7 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <select className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
               <option value="ss">فارسی</option>
               <option value="ss">انگلیسی</option>
             </select>
@@ -71,7 +71,7 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <select className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
               <option value="ss">شیک و کلاسیک</option>
               <option value="ss">لاکچری و مدرن</option>
               <option value="efef">خلاقانه و مفهومی</option>
@@ -90,8 +90,9 @@ function CardForm() {
               </span>
             </label>
             <input
+              placeholder="بنفش و آبی"
               className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
-              type="number"
+              type="text"
               name="paid"
               id="paid"
               onChange={(e) => setForm(e.target.value)}
@@ -107,13 +108,22 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <input
-              className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
-              type="number"
-              name="paid"
-              id="paid"
-              onChange={(e) => setForm(e.target.value)}
-            />
+            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+              <option value="ss">
+                رابطه مفهومی: مثل نقش یک شعله برای شرکت فعال در زمینه نفت و گاز
+              </option>
+              <option value="ss">
+                رابطه مستقیم: مانند نقش یک توپ بسکتبال برای یک تیم بسکتبال
+              </option>
+              <option value="efef">
+                رابطه غیر مستقیم: به طور مثال نمایشی از قدمت و سنت ملی آن کشور؛
+                مانند جام بانک پاسارگاد
+              </option>
+              <option value="seffs">
+                بدون ارتباط: به طوری که به تدریج معرف موضوع شود؛ مانند شکل سیب
+                برای شرکت اپل
+              </option>
+            </select>
           </div>
 
           <div className="flex flex-col space-y-1">
