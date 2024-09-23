@@ -45,14 +45,14 @@ function CardForm() {
               placeholder="مثال: لوگو کارخانجات صنایع فلزی آلفا"
               className="py-2 px-2 w-full rounded-md border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 focus:outline-none"
               type="text"
-              name="name"
+              name="namelogo"
               id="name"
               onChange={changeHandler}
             />
           </div>
 
           <div className="flex flex-col space-y-1">
-            <label className="flex items-start gap-x-1">
+            <label className="flex items-start gap-x-1" htmlFor="typelogo">
               مایلید برندتان چه سبکی طراحی شود؟
               <span className="text-black">
                 <svg className="h-[10px] w-[10px] dark:text-white text-black ">
@@ -62,6 +62,8 @@ function CardForm() {
             </label>
             <select
               className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
+              name="typelogo"
+              id="typelogo"
               onChange={changeHandler}
             >
               <option value="ss">لوگو تصویری</option>
@@ -71,7 +73,7 @@ function CardForm() {
           </div>
 
           <div className="flex flex-col space-y-1">
-            <label className="flex items-start gap-x-1" htmlFor="approved">
+            <label className="flex items-start gap-x-1" htmlFor="language">
               لوگو مدنظرتان به چه زبان هایی طراحی شود؟
               <span className="text-black">
                 <svg className="h-[10px] w-[10px] dark:text-white text-black ">
@@ -82,14 +84,16 @@ function CardForm() {
             <select
               className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
               onChange={changeHandler}
+              name="language"
+              id="language"
             >
-              <option value="ss">فارسی</option>
-              <option value="ss">انگلیسی</option>
+              <option value="persian">فارسی</option>
+              <option value="english">انگلیسی</option>
             </select>
           </div>
 
           <div className="flex flex-col space-y-1">
-            <label className="flex items-start gap-x-1" htmlFor="notpaid">
+            <label className="flex items-start gap-x-1" htmlFor="logoidentity">
               ساختار کلی هویت و سبک اجرایی لوگو چگونه باشد؟
               <span className="text-black">
                 <svg className="h-[10px] w-[10px] dark:text-white text-black ">
@@ -100,17 +104,19 @@ function CardForm() {
             <select
               className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
               onChange={changeHandler}
+              name="logoidentity"
+              id="logoidentity"
             >
-              <option value="ss">شیک و کلاسیک</option>
-              <option value="ss">لاکچری و مدرن</option>
-              <option value="efef">خلاقانه و مفهومی</option>
-              <option value="seffs">ساده و مینیمال</option>
-              <option value="ss">به انتخاب طراح</option>
+              <option value="classic">شیک و کلاسیک</option>
+              <option value="modern">لاکچری و مدرن</option>
+              <option value="conceptual">خلاقانه و مفهومی</option>
+              <option value="Minimal">ساده و مینیمال</option>
+              <option value="designer">به انتخاب طراح</option>
             </select>
           </div>
 
           <div className="flex flex-col space-y-1">
-            <label className="flex items-start gap-x-1" htmlFor="paid">
+            <label className="flex items-start gap-x-1" htmlFor="color">
               رنگ برندتان چگونه باشد؟
               <span className="text-black">
                 <svg className="h-[10px] w-[10px] dark:text-white text-black ">
@@ -122,14 +128,14 @@ function CardForm() {
               placeholder="بنفش و آبی"
               className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
               type="text"
-              name="paid"
-              id="paid"
+              name="logocolor"
+              id="color"
               onChange={changeHandler}
             />
           </div>
 
           <div className="flex flex-col space-y-1">
-            <label className="flex items-start gap-x-1" htmlFor="paid">
+            <label className="flex items-start gap-x-1" htmlFor="logolink">
               رابطه لوگو با محصول یا خدمات شما چگونه باشد؟
               <span className="text-black">
                 <svg className="h-[10px] w-[10px] dark:text-white text-black ">
@@ -139,19 +145,20 @@ function CardForm() {
             </label>
             <select
               className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
+              name="logolink"
               onChange={changeHandler}
             >
-              <option value="ss">
+              <option value="concept">
                 رابطه مفهومی: مثل نقش یک شعله برای شرکت فعال در زمینه نفت و گاز
               </option>
-              <option value="ss">
+              <option value="direct">
                 رابطه مستقیم: مانند نقش یک توپ بسکتبال برای یک تیم بسکتبال
               </option>
-              <option value="efef">
+              <option value="Indirect">
                 رابطه غیر مستقیم: به طور مثال نمایشی از قدمت و سنت ملی آن کشور؛
                 مانند جام بانک پاسارگاد
               </option>
-              <option value="seffs">
+              <option value="unrelated">
                 بدون ارتباط: به طوری که به تدریج معرف موضوع شود؛ مانند شکل سیب
                 برای شرکت اپل
               </option>
@@ -161,7 +168,7 @@ function CardForm() {
           <div className="flex flex-col space-y-1">
             <label
               className="flex items-start gap-x-1 text-justify tracking-normal"
-              htmlFor="paid"
+              htmlFor="logoconcept"
             >
               لطفا نام تجاریتان، معنای لغوی و ارتباط آن با فعالیت مجموعه خود را
               ذکر نمایید:
@@ -174,8 +181,8 @@ function CardForm() {
             <textarea
               onChange={changeHandler}
               className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
-              name=""
-              id=""
+              name="logoconcept"
+              id="logoconcept"
             ></textarea>
           </div>
         </div>
