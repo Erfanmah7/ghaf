@@ -66,9 +66,9 @@ function CardForm() {
               id="typelogo"
               onChange={changeHandler}
             >
-              <option value="ss">لوگو تصویری</option>
-              <option value="efef">لوگو تایپ</option>
-              <option value="seffs">لوگو ترکیبی</option>
+              <option value="logopic">لوگو تصویری</option>
+              <option value="logotype">لوگو تایپ</option>
+              <option value="logotp">لوگو ترکیبی</option>
             </select>
           </div>
 
