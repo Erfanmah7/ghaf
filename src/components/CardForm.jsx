@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useQueryClient } from "@tanstack/react-query";
+import { postMutation } from "../hooks/mutations";
 
 function CardForm() {
   const [form, setForm] = useState({
@@ -11,6 +13,8 @@ function CardForm() {
     logoconcept: "",
   });
 
+  const { data, mutate } = postMutation();
+  const QueryClient = useQueryClient();
   const changeHandler = (e) => {
     const name = e.target.name;
     setForm({ ...form, [name]: e.target.value });
@@ -18,7 +22,16 @@ function CardForm() {
 
   const addHandler = (e) => {
     e.preventDefault();
-    console.log(form);
+    mutate(form, {
+      onSuccess: (form) => {
+        console.log("data:", form);
+        QueryClient.invalidateQueries({ queryKey: ["posts"] });
+      },
+      onError: (error) => {
+        console.log("error:", error.message);
+      },
+    });
+    console.log(data);
   };
 
   return (
