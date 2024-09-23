@@ -1,3 +1,4 @@
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Layout from "./layout/Layout";
 import Router from "./routers/Router";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Layout>
         <Router />
+        <ReactQueryDevtools />
       </Layout>
     </>
   );
