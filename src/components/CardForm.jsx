@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function CardForm() {
+  const [form, setForm] = useState({
+    namelogo: "",
+    typelogo: "",
+    language: "",
+    logoidentity: "",
+    logocolor: "",
+    logolink: "",
+    logoconcept: "",
+  });
+
+  const changeHandler = (e) => {
+    const name = e.target.name;
+    setForm({ ...form, [name]: e.target.value });
+  };
+
+  const addHandler = (e) => {
+    e.preventDefault();
+    console.log(form);
+  };
+
   return (
-    <form className="relative drop-shadow-md">
+    <form onSubmit={addHandler} className="relative drop-shadow-md">
       <p className="absolute right-0 left-0 md:-top-[53px] -top-[47px] z-10 md:text-xl text-base font-IranSansBold py-[6px] text-center rounded-xl text-black my-5">
         ثبت سفارش لوگو
       </p>
@@ -27,7 +47,7 @@ function CardForm() {
               type="text"
               name="name"
               id="name"
-              onChange={(e) => setForm(e.target.value)}
+              onChange={changeHandler}
             />
           </div>
 
@@ -40,7 +60,10 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+            <select
+              className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
+              onChange={changeHandler}
+            >
               <option value="ss">لوگو تصویری</option>
               <option value="efef">لوگو تایپ</option>
               <option value="seffs">لوگو ترکیبی</option>
@@ -56,7 +79,10 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+            <select
+              className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
+              onChange={changeHandler}
+            >
               <option value="ss">فارسی</option>
               <option value="ss">انگلیسی</option>
             </select>
@@ -71,7 +97,10 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+            <select
+              className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
+              onChange={changeHandler}
+            >
               <option value="ss">شیک و کلاسیک</option>
               <option value="ss">لاکچری و مدرن</option>
               <option value="efef">خلاقانه و مفهومی</option>
@@ -95,7 +124,7 @@ function CardForm() {
               type="text"
               name="paid"
               id="paid"
-              onChange={(e) => setForm(e.target.value)}
+              onChange={changeHandler}
             />
           </div>
 
@@ -108,7 +137,10 @@ function CardForm() {
                 </svg>
               </span>
             </label>
-            <select className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none">
+            <select
+              className="py-2 appearance-none px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
+              onChange={changeHandler}
+            >
               <option value="ss">
                 رابطه مفهومی: مثل نقش یک شعله برای شرکت فعال در زمینه نفت و گاز
               </option>
@@ -140,6 +172,7 @@ function CardForm() {
               </span>
             </label>
             <textarea
+              onChange={changeHandler}
               className="py-2 px-2 w-full border-zinc-200 border dark:border-zinc-500 bg-zinc-200/15 rounded-md focus:outline-none"
               name=""
               id=""
@@ -156,7 +189,10 @@ function CardForm() {
       <svg className="h-[50px] w-[50px] absolute top-[170px] -left-6 md:inline-block hidden text-black text-gradient-to-t from-zinc-700 ">
         <use href="#star"></use>
       </svg>
-      <button className="absolute left-4 -bottom-[50px] text-base text-center py-[6px] px-5 w-28 rounded-xl text-white bg-black bg-gradient-to-t from-zinc-700 hover:bg-zinc-700 my-5">
+      <button
+        type="submit"
+        className="absolute left-4 -bottom-[50px] text-base text-center py-[6px] px-5 w-28 rounded-xl text-white bg-black bg-gradient-to-t from-zinc-700 hover:bg-zinc-700 my-5"
+      >
         ارسال
       </button>
     </form>
