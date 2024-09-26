@@ -82,9 +82,8 @@ function CardForm() {
                 id="typelogo"
                 onChange={changeHandler}
               >
-                {" "}
                 <option value="hint" disabled selected hidden>
-                  یک مورد را انتخاب کنید
+                  یک مورد انتخاب کنید
                 </option>
                 <option value="logopic">لوگو تصویری</option>
                 <option value="logotype">لوگو تایپ</option>
@@ -109,7 +108,7 @@ function CardForm() {
               >
                 {" "}
                 <option value="hint" disabled selected hidden>
-                  یک مورد را انتخاب کنید
+                  یک مورد انتخاب کنید
                 </option>
                 <option value="persian">فارسی</option>
                 <option value="english">انگلیسی</option>
@@ -136,7 +135,7 @@ function CardForm() {
               >
                 {" "}
                 <option value="hint" disabled selected hidden>
-                  یک مورد را انتخاب کنید
+                  یک مورد انتخاب کنید
                 </option>
                 <option value="classic">شیک و کلاسیک</option>
                 <option value="modern">لاکچری و مدرن</option>
@@ -180,7 +179,7 @@ function CardForm() {
                 onChange={changeHandler}
               >
                 <option value="hint" disabled selected hidden>
-                  یک مورد را انتخاب کنید
+                  یک مورد انتخاب کنید
                 </option>
                 <option value="concept">
                   رابطه مفهومی: مثل نقش یک شعله برای شرکت فعال در زمینه نفت و
