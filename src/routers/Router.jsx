@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import FormAbout from "../components/FormAbout";
 import FormRegistr from "../components/FormRegistr";
+import Details from "../pages/details";
 
 function Router() {
   return (
@@ -11,6 +12,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<FormRegistr />} />
+        <Route path="/card/:id" element={<Details />} />
         <Route path="/about-us" element={<FormAbout />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

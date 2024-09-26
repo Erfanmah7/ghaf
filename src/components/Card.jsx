@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Details from "../pages/details";
 
-function Card() {
+function Card({ id }) {
   return (
     <div className="relative drop-shadow-md">
       <svg className="text-white w-44 h-44 md:w-36 md:h-36 absolute right-0 -top-[104px]  md:-top-[84.8px] rotate-180">
@@ -17,9 +19,12 @@ function Card() {
       <svg className="text-white md:w-44 md:h-44 w-44 h-44 absolute left-0 md:left-0 -bottom-[104px]">
         <use href="#left-right"></use>
       </svg>
-      <button className="absolute md:left-[17px] left-4 -bottom-[50px] text-base text-center py-[6px] px-5 w-28 rounded-xl text-white bg-black bg-gradient-to-t from-zinc-700 hover:bg-zinc-700 my-5">
+      <Link
+        to={`/card/${id}`}
+        className="absolute md:left-[17px] left-4 -bottom-[50px] text-base text-center py-[6px] px-5 w-28 rounded-xl text-white bg-black bg-gradient-to-t from-zinc-700 hover:bg-zinc-700 my-5"
+      >
         مشاهده
-      </button>
+      </Link>
     </div>
   );
 }
