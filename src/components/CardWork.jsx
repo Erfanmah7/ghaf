@@ -12,7 +12,10 @@ const myProducts = [
 
 function CardWork() {
   return (
-    <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-28">
+    <div
+      id="work"
+      className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-28"
+    >
       {myProducts.map((p) => (
         <div key={p.id}>
           <Card id={p.id} />

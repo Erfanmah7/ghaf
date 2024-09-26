@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Details from "../pages/details";
 
 function Card({ id }) {
   return (

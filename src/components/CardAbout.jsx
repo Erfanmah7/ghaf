@@ -3,7 +3,10 @@ import React from "react";
 function CardAbout() {
   return (
     <div className="relative top-32 mb-24 drop-shadow-md">
-      <p className="absolute md:right-6 right-2 -top-[47px] md:-top-[53px] z-10 md:text-xl text-base font-IranSansBold py-[6px] px-5 w-28 rounded-xl text-black my-5">
+      <p
+        id="about"
+        className="absolute md:right-6 right-2 -top-[47px] md:-top-[53px] z-10 md:text-xl text-base font-IranSansBold py-[6px] px-5 w-28 rounded-xl text-black my-5"
+      >
         درباره ما
       </p>
       <svg className="text-white md:w-44 md:h-44 w-32 h-32 -top-[75px] absolute right-0 md:-top-[103.7px] rotate-180">
