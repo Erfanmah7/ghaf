@@ -82,6 +82,10 @@ function CardForm() {
                 id="typelogo"
                 onChange={changeHandler}
               >
+                {" "}
+                <option value="hint" disabled selected hidden>
+                  یک مورد را انتخاب کنید
+                </option>
                 <option value="logopic">لوگو تصویری</option>
                 <option value="logotype">لوگو تایپ</option>
                 <option value="logotp">لوگو ترکیبی</option>
@@ -103,6 +107,10 @@ function CardForm() {
                 name="language"
                 id="language"
               >
+                {" "}
+                <option value="hint" disabled selected hidden>
+                  یک مورد را انتخاب کنید
+                </option>
                 <option value="persian">فارسی</option>
                 <option value="english">انگلیسی</option>
               </select>
@@ -126,6 +134,10 @@ function CardForm() {
                 name="logoidentity"
                 id="logoidentity"
               >
+                {" "}
+                <option value="hint" disabled selected hidden>
+                  یک مورد را انتخاب کنید
+                </option>
                 <option value="classic">شیک و کلاسیک</option>
                 <option value="modern">لاکچری و مدرن</option>
                 <option value="conceptual">خلاقانه و مفهومی</option>
@@ -167,6 +179,9 @@ function CardForm() {
                 name="logolink"
                 onChange={changeHandler}
               >
+                <option value="hint" disabled selected hidden>
+                  یک مورد را انتخاب کنید
+                </option>
                 <option value="concept">
                   رابطه مفهومی: مثل نقش یک شعله برای شرکت فعال در زمینه نفت و
                   گاز

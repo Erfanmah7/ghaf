@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import FormAbout from "../components/FormAbout";
 import FormRegistr from "../components/FormRegistr";
-import Details from "../pages/details";
+import Details from "../pages/Details";
 
 function Router() {
   return (
