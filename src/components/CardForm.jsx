@@ -106,7 +106,6 @@ function CardForm() {
                 name="language"
                 id="language"
               >
-                {" "}
                 <option value="hint" disabled selected hidden>
                   یک مورد انتخاب کنید
                 </option>
@@ -133,7 +132,6 @@ function CardForm() {
                 name="logoidentity"
                 id="logoidentity"
               >
-                {" "}
                 <option value="hint" disabled selected hidden>
                   یک مورد انتخاب کنید
                 </option>

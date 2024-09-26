@@ -2,7 +2,7 @@ import React from "react";
 
 function CardAbout() {
   return (
-    <div className="relative top-32 mb-24 drop-shadow-md">
+    <div className="relative top-28 mb-24 drop-shadow-md">
       <p
         id="about"
         className="absolute md:right-6 right-2 -top-[47px] md:-top-[53px] z-10 md:text-xl text-base font-IranSansBold py-[6px] px-5 w-28 rounded-xl text-black my-5"
@@ -12,8 +12,11 @@ function CardAbout() {
       <svg className="text-white md:w-44 md:h-44 w-32 h-32 -top-[75px] absolute right-0 md:-top-[103.7px] rotate-180">
         <use href="#left-right"></use>
       </svg>
-      <div className="md:h-[200px] h-[420px] overflow-y-auto justify-center flex pt-5 bg-white rounded-2xl rounded-tr-none">
-        <p className="md:p-6 p-4 text-justify md:leading-8 text-base leading-6">
+
+      <div className="md:h-[200px] h-[600px] p-3 justify-center items-center flex md:flex-row  flex-col bg-white rounded-2xl rounded-tr-none">
+        <div className="md:w-[1150px] md:h-[175px] w-full h-[675px] bg-zinc-300 rounded-xl"></div>
+
+        <p className="md:p-6 pt-4 px-1 pb-2 text-justify md:leading-8 text-base leading-6">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
           ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
