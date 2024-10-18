@@ -52,14 +52,7 @@ function Header() {
                 خانه
               </a>
             </li>
-            <li>
-              <a
-                href="#work"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-zinc-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                نمونه کار
-              </a>
-            </li>
+
             <li>
               <a
                 href="#"
@@ -70,20 +63,13 @@ function Header() {
             </li>
             <li>
               <a
-                href="#"
+                href="#work"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-zinc-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                درخواست مشاوره
+                نمونه کار
               </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-zinc-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                مقالات
-              </a>
-            </li>
+
             <li>
               <a
                 href="#about"
